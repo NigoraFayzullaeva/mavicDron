@@ -39,13 +39,27 @@ body{
     margin: 0 auto;
 }
 .page-section{
-    min-height: 100vh;
     background-image: url('../images/page-bg.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     position: relative;
-    padding: 74px 0 50px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+        opacity: 0.15;
+    }
+    &-wrapper{
+        min-height: 100vh;
+        position: relative;
+        padding: 74px 0 50px;
+        z-index: 1;
+    }
 }
 .title{
     @extend %sf-regular;
@@ -53,6 +67,7 @@ body{
     line-height: 53px;
     padding-left: 25px;
     margin-bottom: 55px;
+    padding-top: 200px;
 }
 .scroll-btn{
     padding: 13px 0 30px;

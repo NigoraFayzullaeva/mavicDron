@@ -14,23 +14,26 @@
 
   <header class="header">
     <div class="container">
-      <div class="header-inner">
-        <a href="#" class="logo">
-          <picture class="logo-img">
-            <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
-            <img src="images/logo.png" alt="">
-          </picture>
-        </a>
+      <div id="header-nav" class="header-inner">
+        <div data-manuanchor="top">
+          <a href="#top" class="logo">
+            <picture class="logo-img">
+              <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
+              <img src="images/logo.png" alt="">
+            </picture>
+          </a>
+        </div>
+        
         <nav class="menu">
           <button class="menu-btn">
             <span class="menu-btn-line"></span>
           </button>
           <ul class="menu-list">
-            <li class="menu-list-item"><a href="#products" class="menu-list-link">ABOUT DRONE</a></li>
-            <li class="menu-list-item"><a href="#benefits" class="menu-list-link">BENEFITS</a></li>
-            <li class="menu-list-item"><a href="#specification" class="menu-list-link">CHARACTERISTICS</a></li>
-            <li class="menu-list-item"><a href="#questions" class="menu-list-link">QUESTIONS</a></li>
-            <li class="menu-list-item"><a href="#contacts" class="menu-list-link">CONTACTS</a></li>
+            <li class="menu-list-item" data-manuanchor="products"><a href="#products" class="menu-list-link">ABOUT DRONE</a></li>
+            <li class="menu-list-item" data-manuanchor="benefits"><a href="#benefits" class="menu-list-link">BENEFITS</a></li>
+            <li class="menu-list-item" data-manuanchor="specification"><a href="#specification" class="menu-list-link">CHARACTERISTICS</a></li>
+            <li class="menu-list-item" data-manuanchor="questions"><a href="#questions" class="menu-list-link">QUESTIONS</a></li>
+            <li class="menu-list-item" data-manuanchor="contacts"><a href="#contacts" class="menu-list-link">CONTACTS</a></li>
             <li class="menu-list-phone">          <a href="tel:80505676767" class="header-phone">8 (050) 567 67 67</a>
             </li>
           </ul>
@@ -45,7 +48,7 @@
 
   <main id="fullpage">
 
-  <section class="page-section top">
+  <section data-anchor="top" class="page-section top">
     <div class="page-section-wrapper top-wrapper">
       <div class="container">
         <div class="top-inner">
@@ -80,7 +83,7 @@
     </div>
   </section>
 
-  <section id="products" class="page-section products">
+  <section data-anchor="products" class="page-section products">
     <div class="page-section-wrapper">
       <div class="container">
         <h3 class="title products-title">
@@ -138,7 +141,7 @@
     </div>
   </section>
 
-  <section id="benefits" class="page-section benefits">
+  <section data-anchor="benefits" class="page-section benefits">
     <div class="page-section-wrapper">
       <div class="container">
         <h3 class="title">Benefits</h3>
@@ -227,7 +230,7 @@
     </div>
   </section>
 
-  <section id="specification" class="page-section specification">
+  <section data-anchor="specification" class="page-section specification">
     <div class="page-section-wrapper">
       <div class="container">
         <h3 class="title">Characteristics</h3>
@@ -283,7 +286,7 @@
     </div>
   </section>
 
-  <section id="questions" class="page-section questions">
+  <section data-anchor="questions" class="page-section questions">
     <div class="page-section-wrapper">
       <div class="container">
         <h3 class="title">Still have questions?</h3>
@@ -335,7 +338,7 @@
     </div>
   </section>
 
-  <section id="contacts" class="page-section contacts">
+  <section data-anchor="contacts" class="page-section contacts">
     <div class="page-section-wrapper">
       <div class="container">
         <h3 class="title">Contacts</h3>

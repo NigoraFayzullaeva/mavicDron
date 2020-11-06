@@ -20,4 +20,14 @@ $('#fullpage').fullpage({
     anchors:['top', 'products', 'benefits', 'specification', 'questions', 'contacts'],
 });
 
+$('.menu-btn').on('click', function(){
+    $('.menu-btn').toggleClass('menu-btn-active');
+    $('.menu-list').toggleClass('menu-list-active');
+});
+
+$('.menu-list-link').on('click', function(){
+    $('.menu-btn').removeClass('menu-btn-active');
+    $('.menu-list').removeClass('menu-list-active');
+});
+
 });

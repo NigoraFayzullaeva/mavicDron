@@ -289,6 +289,14 @@
     .products-slider-box{
         padding-bottom: 80px;
     }
+    .contacts-inner{
+        flex-wrap: wrap;
+    }
+    .contacts-form{
+        width: 100%;
+        margin-right: 0;
+        order: 1;
+    }
 }
 @media (max-width: 787px){
     .benefits-item:nth-child(even){
@@ -321,6 +329,9 @@
     }
     .questions-item-text{
         padding: 0 15px 40px 30px;
+    }
+    .contacts-inner{
+        padding-left: 0;
     }
 }
 @media (max-width: 680px){
@@ -397,6 +408,20 @@
     }
     .questions-item-title{
         padding: 15px 75px 15px 15px;
+    }
+    .contacts-form-line{
+        display: block;
+    }
+    .contacts-form-input{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 414px) {
+    .contacts-social-list{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
     }
 }
 @media (max-height: 375px) {
